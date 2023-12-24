@@ -4,8 +4,17 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      {/* <header className="App-header">
+      <h1>My favourite fruits.</h1>
+      <ul>
+        <li>Banana</li>
+        <li>Peach</li>
+        <li>Apple</li>
+      </ul>
+    </div>
+  );
+}
+
+   /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,9 +27,8 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
-    </div>
-  );
-}
+      </header> */
+
+
 
 export default App;
