@@ -1,15 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 
+const fName = "Milan ";
+const lName = "Shubaev";
+const randomNumber = 1;
+
 function App() {
   return (
     <div className="App">
-      <h1>My favourite fruits.</h1>
-      <ul>
-        <li>Banana</li>
-        <li>Peach</li>
-        <li>Apple</li>
-      </ul>
+      <h1>My name is {fName + lName}</h1>
+      <p>My lucky number is {randomNumber}</p>
+      <p>My random number is {Math.floor(Math.random()*10)}</p>
     </div>
   );
 }
