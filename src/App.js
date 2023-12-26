@@ -9,11 +9,31 @@ let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
 const img = "https://picsum.photos/200";
 
+const date = new Date();
+const currentTime = date.getHours();
+
+let greeting;
+
+const customStyle = {
+  color: ""
+};
+
+if (currentTime < 12) {
+  greeting = "Good Morning";
+  customStyle.color = "red";
+} else if (currentTime < 18) {
+  greeting = "Good Afternoon";
+  customStyle.color = "green";
+} else {
+  greeting = "Good Night";
+  customStyle.color = "blue";
+}
 
 function App() {
   return (
     <div className='App'>
-      <h1 className='myName'>My name is {fName + lName}</h1>
+      <h1 className="heading" style={customStyle}>{greeting}</h1>
+      <h2 className='myName'>My name is {fName + lName}</h2>
       <p>My lucky number is {randomNumber}</p>
       <p>My random number is {Math.floor(Math.random()*10)}</p>
 
